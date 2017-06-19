@@ -19,18 +19,19 @@ namespace Api.Controllers
         // GET: api/Tags
         public IEnumerable<Tag> Get()
         {
-            return DbHandler.
+            return DbHandler.GetAllTags();
         }
 
         // GET: api/Tags/5
-        public string Get(int id)
+        public IEnumerable<Tag> Get(string category)
         {
-            return "value";
+            return DbHandler.GetAllTagsInCategory(category);
         }
 
         // POST: api/Tags
-        public void Post([FromBody]string value)
+        public void Post([FromBody]Tag value)
         {
+            DbHandler.
         }
 
         // PUT: api/Tags/5

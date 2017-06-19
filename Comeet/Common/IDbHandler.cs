@@ -21,5 +21,7 @@ namespace Common
         Tag GetTag(string tagText);
 
         IEnumerable<Tag> GetAllTagsInCategory(string categoryName);
+
+        void AddNewTag(Tag newTag);
     }
 }
