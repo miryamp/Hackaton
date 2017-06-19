@@ -18,10 +18,18 @@ namespace Common
 
         IEnumerable<User> GetUsersByString(string str);
 
+        IEnumerable<User> GetAllUsers();
+
         Tag GetTag(string tagText);
 
         IEnumerable<Tag> GetAllTagsInCategory(string categoryName);
 
         void AddNewTag(Tag newTag);
+
+        void AddNewUser(User newUser);
+
+        void AddTagToUser(Guid userId, Tag newTag);
+
+        void UpdateUser(Guid userId, User newUser);
     }
 }
