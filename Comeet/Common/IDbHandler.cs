@@ -12,6 +12,8 @@ namespace Common
 
         IEnumerable<Tag> GetTagsByUser(Guid userId);
 
+        IEnumerable<Tag> GetAllTags();
+
         IEnumerable<User> GetUsersByTags(IEnumerable<Tag> tags);
 
         IEnumerable<User> GetUsersByString(string str);
