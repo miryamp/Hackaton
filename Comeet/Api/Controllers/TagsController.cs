@@ -27,13 +27,7 @@ namespace Api.Controllers
         {
             return DbHandler.GetAllTagsInCategory(category);
         }
-
-        // POST: api/Tags
-        public void Post([FromBody]Tag value)
-        {
-            DbHandler.
-        }
-
+        
         // PUT: api/Tags/5
         public void Put(int id, [FromBody]string value)
         {
